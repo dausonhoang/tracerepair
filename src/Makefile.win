@@ -1,0 +1,181 @@
+# Project: ISAL_Trace
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = Untitled4.o binCon.o BinRep_test.o binToArr.o bitshift.o cauchy_matrix.o convert_table.o ec_base.o ec_base_aliases.o ec_highlevel_func.o encode_test.o encode_test_function.o erasure_code_base_perf.o erasure_code_base_test.o erasure_code_perf.o erasure_code_test.o erasure_code_test-original.o erasure_code_update_perf.o erasure_code_update_test.o "F16\ calculator.o" FFC.o "FINITE\ FIELD\ CALCULATOR.o" gen_rs_matrix_limits.o gf_2vect_dot_prod_sse_test.o gf_3vect_dot_prod_sse_test.o gf_4vect_dot_prod_sse_test.o gf_5vect_dot_prod_sse_test.o gf_6vect_dot_prod_sse_test.o gf_inverse_test.o gf_vect_dot_prod_1tbl.o gf_vect_dot_prod_base_test.o gf_vect_dot_prod_perf.o gf_vect_dot_prod_test.o gf_vect_mad_perf.o gf_vect_mad_test.o gf_vect_mul_base_test.o gf_vect_mul_perf.o gf_vect_mul_test.o Hex_conv.o htbl.o Ini_tb.o kai1.o matrix.o output.o repair_scheme.o repair_test.o Sort.o "test\ GF.o" test.o testf16.o testRS96.o XOR.o XORnote.o
+LINKOBJ  = Untitled4.o binCon.o BinRep_test.o binToArr.o bitshift.o cauchy_matrix.o convert_table.o ec_base.o ec_base_aliases.o ec_highlevel_func.o encode_test.o encode_test_function.o erasure_code_base_perf.o erasure_code_base_test.o erasure_code_perf.o erasure_code_test.o erasure_code_test-original.o erasure_code_update_perf.o erasure_code_update_test.o "F16 calculator.o" FFC.o "FINITE FIELD CALCULATOR.o" gen_rs_matrix_limits.o gf_2vect_dot_prod_sse_test.o gf_3vect_dot_prod_sse_test.o gf_4vect_dot_prod_sse_test.o gf_5vect_dot_prod_sse_test.o gf_6vect_dot_prod_sse_test.o gf_inverse_test.o gf_vect_dot_prod_1tbl.o gf_vect_dot_prod_base_test.o gf_vect_dot_prod_perf.o gf_vect_dot_prod_test.o gf_vect_mad_perf.o gf_vect_mad_test.o gf_vect_mul_base_test.o gf_vect_mul_perf.o gf_vect_mul_test.o Hex_conv.o htbl.o Ini_tb.o kai1.o matrix.o output.o repair_scheme.o repair_test.o Sort.o "test GF.o" test.o testf16.o testRS96.o XOR.o XORnote.o
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = ISAL_Trace.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+binCon.o: binCon.c
+	$(CC) -c binCon.c -o binCon.o $(CFLAGS)
+
+BinRep_test.o: BinRep_test.c
+	$(CC) -c BinRep_test.c -o BinRep_test.o $(CFLAGS)
+
+binToArr.o: binToArr.c
+	$(CC) -c binToArr.c -o binToArr.o $(CFLAGS)
+
+bitshift.o: bitshift.c
+	$(CC) -c bitshift.c -o bitshift.o $(CFLAGS)
+
+cauchy_matrix.o: cauchy_matrix.c
+	$(CC) -c cauchy_matrix.c -o cauchy_matrix.o $(CFLAGS)
+
+convert_table.o: convert_table.c
+	$(CC) -c convert_table.c -o convert_table.o $(CFLAGS)
+
+ec_base.o: ec_base.c
+	$(CC) -c ec_base.c -o ec_base.o $(CFLAGS)
+
+ec_base_aliases.o: ec_base_aliases.c
+	$(CC) -c ec_base_aliases.c -o ec_base_aliases.o $(CFLAGS)
+
+ec_highlevel_func.o: ec_highlevel_func.c
+	$(CC) -c ec_highlevel_func.c -o ec_highlevel_func.o $(CFLAGS)
+
+encode_test.o: encode_test.c
+	$(CC) -c encode_test.c -o encode_test.o $(CFLAGS)
+
+encode_test_function.o: encode_test_function.c
+	$(CC) -c encode_test_function.c -o encode_test_function.o $(CFLAGS)
+
+erasure_code_base_perf.o: erasure_code_base_perf.c
+	$(CC) -c erasure_code_base_perf.c -o erasure_code_base_perf.o $(CFLAGS)
+
+erasure_code_base_test.o: erasure_code_base_test.c
+	$(CC) -c erasure_code_base_test.c -o erasure_code_base_test.o $(CFLAGS)
+
+erasure_code_perf.o: erasure_code_perf.c
+	$(CC) -c erasure_code_perf.c -o erasure_code_perf.o $(CFLAGS)
+
+erasure_code_test.o: erasure_code_test.c
+	$(CC) -c erasure_code_test.c -o erasure_code_test.o $(CFLAGS)
+
+erasure_code_test-original.o: erasure_code_test-original.c
+	$(CC) -c erasure_code_test-original.c -o erasure_code_test-original.o $(CFLAGS)
+
+erasure_code_update_perf.o: erasure_code_update_perf.c
+	$(CC) -c erasure_code_update_perf.c -o erasure_code_update_perf.o $(CFLAGS)
+
+erasure_code_update_test.o: erasure_code_update_test.c
+	$(CC) -c erasure_code_update_test.c -o erasure_code_update_test.o $(CFLAGS)
+
+"F16\ calculator.o": F16\ calculator.c
+	$(CC) -c "F16 calculator.c" -o "F16 calculator.o" $(CFLAGS)
+
+FFC.o: FFC.c
+	$(CC) -c FFC.c -o FFC.o $(CFLAGS)
+
+"FINITE\ FIELD\ CALCULATOR.o": FINITE\ FIELD\ CALCULATOR.c
+	$(CC) -c "FINITE FIELD CALCULATOR.c" -o "FINITE FIELD CALCULATOR.o" $(CFLAGS)
+
+gen_rs_matrix_limits.o: gen_rs_matrix_limits.c
+	$(CC) -c gen_rs_matrix_limits.c -o gen_rs_matrix_limits.o $(CFLAGS)
+
+gf_2vect_dot_prod_sse_test.o: gf_2vect_dot_prod_sse_test.c
+	$(CC) -c gf_2vect_dot_prod_sse_test.c -o gf_2vect_dot_prod_sse_test.o $(CFLAGS)
+
+gf_3vect_dot_prod_sse_test.o: gf_3vect_dot_prod_sse_test.c
+	$(CC) -c gf_3vect_dot_prod_sse_test.c -o gf_3vect_dot_prod_sse_test.o $(CFLAGS)
+
+gf_4vect_dot_prod_sse_test.o: gf_4vect_dot_prod_sse_test.c
+	$(CC) -c gf_4vect_dot_prod_sse_test.c -o gf_4vect_dot_prod_sse_test.o $(CFLAGS)
+
+gf_5vect_dot_prod_sse_test.o: gf_5vect_dot_prod_sse_test.c
+	$(CC) -c gf_5vect_dot_prod_sse_test.c -o gf_5vect_dot_prod_sse_test.o $(CFLAGS)
+
+gf_6vect_dot_prod_sse_test.o: gf_6vect_dot_prod_sse_test.c
+	$(CC) -c gf_6vect_dot_prod_sse_test.c -o gf_6vect_dot_prod_sse_test.o $(CFLAGS)
+
+gf_inverse_test.o: gf_inverse_test.c
+	$(CC) -c gf_inverse_test.c -o gf_inverse_test.o $(CFLAGS)
+
+gf_vect_dot_prod_1tbl.o: gf_vect_dot_prod_1tbl.c
+	$(CC) -c gf_vect_dot_prod_1tbl.c -o gf_vect_dot_prod_1tbl.o $(CFLAGS)
+
+gf_vect_dot_prod_base_test.o: gf_vect_dot_prod_base_test.c
+	$(CC) -c gf_vect_dot_prod_base_test.c -o gf_vect_dot_prod_base_test.o $(CFLAGS)
+
+gf_vect_dot_prod_perf.o: gf_vect_dot_prod_perf.c
+	$(CC) -c gf_vect_dot_prod_perf.c -o gf_vect_dot_prod_perf.o $(CFLAGS)
+
+gf_vect_dot_prod_test.o: gf_vect_dot_prod_test.c
+	$(CC) -c gf_vect_dot_prod_test.c -o gf_vect_dot_prod_test.o $(CFLAGS)
+
+gf_vect_mad_perf.o: gf_vect_mad_perf.c
+	$(CC) -c gf_vect_mad_perf.c -o gf_vect_mad_perf.o $(CFLAGS)
+
+gf_vect_mad_test.o: gf_vect_mad_test.c
+	$(CC) -c gf_vect_mad_test.c -o gf_vect_mad_test.o $(CFLAGS)
+
+gf_vect_mul_base_test.o: gf_vect_mul_base_test.c
+	$(CC) -c gf_vect_mul_base_test.c -o gf_vect_mul_base_test.o $(CFLAGS)
+
+gf_vect_mul_perf.o: gf_vect_mul_perf.c
+	$(CC) -c gf_vect_mul_perf.c -o gf_vect_mul_perf.o $(CFLAGS)
+
+gf_vect_mul_test.o: gf_vect_mul_test.c
+	$(CC) -c gf_vect_mul_test.c -o gf_vect_mul_test.o $(CFLAGS)
+
+Hex_conv.o: Hex_conv.c
+	$(CC) -c Hex_conv.c -o Hex_conv.o $(CFLAGS)
+
+htbl.o: htbl.c
+	$(CC) -c htbl.c -o htbl.o $(CFLAGS)
+
+Ini_tb.o: Ini_tb.c
+	$(CC) -c Ini_tb.c -o Ini_tb.o $(CFLAGS)
+
+kai1.o: kai1.c
+	$(CC) -c kai1.c -o kai1.o $(CFLAGS)
+
+matrix.o: matrix.c
+	$(CC) -c matrix.c -o matrix.o $(CFLAGS)
+
+output.o: output.c
+	$(CC) -c output.c -o output.o $(CFLAGS)
+
+repair_scheme.o: repair_scheme.c
+	$(CC) -c repair_scheme.c -o repair_scheme.o $(CFLAGS)
+
+repair_test.o: repair_test.c
+	$(CC) -c repair_test.c -o repair_test.o $(CFLAGS)
+
+Sort.o: Sort.c
+	$(CC) -c Sort.c -o Sort.o $(CFLAGS)
+
+"test\ GF.o": test\ GF.c
+	$(CC) -c "test GF.c" -o "test GF.o" $(CFLAGS)
+
+test.o: test.c
+	$(CC) -c test.c -o test.o $(CFLAGS)
+
+testf16.o: testf16.c
+	$(CC) -c testf16.c -o testf16.o $(CFLAGS)
+
+testRS96.o: testRS96.c
+	$(CC) -c testRS96.c -o testRS96.o $(CFLAGS)
+
+XOR.o: XOR.c
+	$(CC) -c XOR.c -o XOR.o $(CFLAGS)
+
+XORnote.o: XORnote.c
+	$(CC) -c XORnote.c -o XORnote.o $(CFLAGS)
