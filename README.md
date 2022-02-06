@@ -3,7 +3,7 @@ Implement the trace repair method to recover a single erasure for Reed-Solomon c
 Contact sonhoang.dau@rmit.edu.au for any feedback or questions  
   
 The main trace repair method is implemented in the file "erasure_code_test_optimised_ISIT.c"   
-        unsigned char* repair_trace_optimised(int n, int j, unsigned char **buffs, double* repair_time_ptr)  
+        unsigned char* repair_trace_optimised(int n, int j, unsigned char ***buffs, double** repair_time_ptr)  
 in which  
 -n: code length, e.g., n = 9, then the codeword c = (c0,c1,...,c8)  
 -j: an integer between 0 and n-1 representing the index to be recovered (cj is lost)  
