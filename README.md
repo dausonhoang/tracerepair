@@ -11,13 +11,13 @@ in which
         buffs is generated randomly in main()
 -repair_time_ptr: record the total running time
 
-#Set up parameters
+# Set up parameters
 -Set TEST_LEN = 10,000,000 for example
 -Go to main(), set m = 9, k = 6 for a RS(9,6), note that the code use m in main(), not n
 -Go to the preamble, uncomment the corresponding header file to access the required tables H, R, D, e.g., 
       #include "repair_scheme_tbl_9_6_ISIT.h"
 
-#Compilation & Run
+# Compilation & Run
 -Normal compilation and run on IDE
 -Linux:
       gcc -std=gnu99 erasure_code_test_optimised_ISIT.c -o erasure_code_test_optimised_ISIT
