@@ -1,4 +1,4 @@
-# tracerepair
+# Trace Repair for Reed-Solomon Codes
 Implement the trace repair method to recover a single erasure for Reed-Solomon codes on top of ISA-L  
 Contact sonhoang.dau@rmit.edu.au for any feedback or questions  
   
