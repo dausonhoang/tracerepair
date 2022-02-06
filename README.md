@@ -11,7 +11,7 @@ in which
         buffs is generated randomly in main()  
 -repair_time_ptr: record the total running time  
    
-# Set up parameters  
+# Parameters Setup  
 -Set TEST_LEN = 10,000,000 for example  
 -Go to main(), set m = 9, k = 6 for a RS(9,6), note that the code use m in main(), not n  
 -Go to the preamble, uncomment the corresponding header file to access the required tables H, R, D, e.g.,   
